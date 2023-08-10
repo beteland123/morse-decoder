@@ -27,7 +27,7 @@ def decode_word(str)
       word += letter
     end
   end
-  puts word
+  print word
 end
 #decode_word("-- -.--")
 
