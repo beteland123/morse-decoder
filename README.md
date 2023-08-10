@@ -35,7 +35,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 1- Ruby<br>
-2- Gitflow
+2- Gitflow<br>
 3- Rubocop
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -64,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming Soon...](https://github.com/JuanDBta/morse-code)
+- [Coming Soon...](https://github.com/beteland123/morse-decoder)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,11 +86,11 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone "https://github.com/JuanDBta/morse-code.git"
+  git clone "https://github.com/beteland123/morse-decoder.git"
 ```
 ### Deployment
 
-You can deploy this project using:<br>[Coming Soon!!!](https://github.com/JuanDBta/morse-code)
+You can deploy this project using:<br>[Coming Soon!!!](https://github.com/beteland123/morse-decoder)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
