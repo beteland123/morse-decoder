@@ -7,7 +7,7 @@ def decode_char(morse_code)
     '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y',
     '--..' => 'Z'
   }
-  morse_to_char[morse_code]
+  morse_to_char[morse_code] || ""
 end
 puts decode_char('.-')
 
@@ -21,10 +21,26 @@ def decode_word(str)
   parts = str.split(" ")
   word = ""
   parts.each do |i|
-   letter = decode_char(i)
-   word += letter
+    letter = decode_char(i)
+
+    if letter
+      word += letter
+    end
   end
   puts word
 end
-
 decode_word("-- -.--")
+
+def decode(str)
+  words = str.split(" ")
+  message = ""
+  words.each do |word|
+    decoded_word = decode_word(word)
+
+    if decoded_word
+      message += decoded_word 
+    end
+  end
+  print message
+end
+decode("-- -.--   -. .- -- .")
