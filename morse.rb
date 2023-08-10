@@ -32,12 +32,17 @@ end
 #decode_word("-- -.--")
 
 def decode(str)
-  words = str.split("   ")
+  words = str.split(" ")
+  message = ""
 
-  message = words.map do |word| 
-    decode_word(word)
-  end.join("   ")
+  words.each do |word|
+    decoded_word = decode_word(word)
 
-  puts message
+    if decoded_word
+      message += decoded_word + " "
+    end
+  end
+
+  print message
 end
 decode("-- -.--   -. .- -- .")
