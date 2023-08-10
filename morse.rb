@@ -9,7 +9,7 @@ def decode_char(morse_code)
   }
   morse_to_char[morse_code] || ""
 end
-puts decode_char('.-')
+#puts decode_char('.-')
 
 =begin
  Create a method to decode an entire word in Morse code, takes a string parameter, 
@@ -29,18 +29,15 @@ def decode_word(str)
   end
   puts word
 end
-decode_word("-- -.--")
+#decode_word("-- -.--")
 
 def decode(str)
-  words = str.split(" ")
-  message = ""
-  words.each do |word|
-    decoded_word = decode_word(word)
+  words = str.split("   ")
 
-    if decoded_word
-      message += decoded_word 
-    end
-  end
-  puts message.join('')
+  message = words.map do |word| 
+    decode_word(word)
+  end.join("   ")
+
+  puts message
 end
 decode("-- -.--   -. .- -- .")
