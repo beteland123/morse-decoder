@@ -41,6 +41,6 @@ def decode(str)
       message += decoded_word 
     end
   end
-  print message
+  puts message.join('')
 end
 decode("-- -.--   -. .- -- .")
