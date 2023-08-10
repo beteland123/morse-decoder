@@ -7,6 +7,6 @@ def decode_char(morse_code)
         '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y',
         '--..' => 'Z'
     }
-    
+    morse_to_char[morse_code]
 end
-print decode_char(".-")
+puts decode_char(".-")
