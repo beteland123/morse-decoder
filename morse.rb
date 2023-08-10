@@ -45,4 +45,4 @@ def decode(str)
 
   print message
 end
-decode("-- -.--   -. .- -- .")
+puts decode("-- -.--   -. .- -- .")
