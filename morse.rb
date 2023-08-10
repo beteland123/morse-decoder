@@ -11,7 +11,7 @@ def decode_char(morse_code)
 end
 
 def decode_word(str)
-  parts = str.split(' ')
+  parts = str.split
   word = ''
   parts.each do |i|
     letter = decode_char(i)
